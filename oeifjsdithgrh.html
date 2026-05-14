@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -14,8 +14,16 @@
 
     body {
       margin: 0;
+      background-color: #f2f2f2;
       font-family: 'Press Start 2P', cursive;
-      color: #FFFFFF;
+    }
+
+    .container {
+      max-width: 1500px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
     }
 
     header {
@@ -23,110 +31,105 @@
       font-size: 3rem;
       color: #FBBC04;
       text-shadow: 0 0 10px #FEEFC3;
+      margin-bottom: 30px;
     }
 
-    .container {
+    .hero {
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       gap: 40px;
-      padding: 40px 20px;
+      padding: 20px;
     }
 
     .profile-img {
-      width: 700px;
-      max-width: 75vw;
-      border-radius: 12px;
-    }
-
-    @keyframes float {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-12px); }
-      100% { transform: translateY(0); }
+      width: 500px;
+      max-width: 100%;
+      border-radius: 15px;
     }
 
     .text {
-      max-width: 1000px;
-      background: rgba(255, 255, 255, 0.6);
-      padding: 30px;
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 25px;
       border-radius: 12px;
     }
 
     h2 {
       color: #FBBC04;
       margin-bottom: 15px;
-      font-size: 0.9rem;
+      font-size: 1.3rem;
     }
 
     p {
-      font-size: 1.75rem;
+      font-size: 1.3rem;
       line-height: 1.8;
       color: #202124;
     }
 
-    p2 {
-      font-size: 1rem;
-      line-height: 1.8;
+    .small-text {
+      font-size: 1.1rem;
       color: #202124;
-      display: block;
-      margin: 10px 0;
-    }
-
-    a:visited {
-      color: #FBBC04;
-    }
-
-    a:hover {
-      color: #FBBC04;
-    }
-
-    a:active {
-      color: #FBBC04;
+      margin: 8px 0;
     }
 
     .section {
-      padding: 40px 20px;
+      padding: 30px 20px;
       text-align: center;
     }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
+    .button {
+      background-color: #E37400;
+      color: white;
+
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+
+      font-size: 20px;
+      cursor: pointer;
+
+      transition: 0.3s;
+
+      display: block;
+      margin: 30px auto;
     }
 
-    .card {
-      background: rgba(2, 6, 23, 0.8);
-      border: 2px solid #FBBC04;
-      padding: 20px;
-      border-radius: 12px;
-      transition: 0.3s ease;
+    .button:hover {
+      background-color: #FBBC04;
     }
 
-    .card:hover {
-      transform: translateY(-5px) scale(1.03);
-      box-shadow: 0 0 25px #FEEFC3;
+    /* 🔶 ALL LINKS = ORANGE */
+    a {
+      color: #FBBC04 !important;
+      text-decoration: none;
+      text-shadow: 0 0 6px #FBBC04;
     }
 
-    footer {
-      text-align: center;
-      padding: 25px;
-      font-size: 0.55rem;
-      color: #64748b;
+    a:visited,
+    a:hover,
+    a:active {
+      color: orange !important;
+      text-shadow: 0 0 10px orange;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+      }
     }
 
     @media (max-width: 600px) {
       header {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
       }
 
       p {
-        font-size: 0.6rem;
+        font-size: 0.9rem;
+      }
+
+      .small-text {
+        font-size: 0.8rem;
       }
     }
   </style>
@@ -134,47 +137,47 @@
 
 <body>
 
-<header>
-  <br>
-  👑 Killstreaker 👑
-</header>
+<div class="container">
 
-<section class="container">
-  <img src="https://i1.sndcdn.com/artworks-iVkNLLsezX67N9vE-eNijVg-t1080x1080.jpg" alt="My Image" class="profile-img">
+  <header>
+    👑 Killstreaker 👑
+  </header>
 
-  <div class="text">
-    <h2>About Me</h2>
-    <p>
-      Yo! I'm Killstreaker — a gamer, builder, and creative mind who loves Minecraft-style worlds and cool projects.
+  <section class="hero">
+    <img src="https://i1.sndcdn.com/artworks-iVkNLLsezX67N9vE-eNijVg-t1080x1080.jpg" class="profile-img">
+
+    <div class="text">
+      <h2>About Me</h2>
+      <p>Yo! I'm Killstreaker — a gamer, builder, and creative mind.</p>
+      <p>I enjoy designing, exploring, and leveling up 🚀</p>
+    </div>
+  </section>
+
+<a href="https://timogus2001.github.io/MY-FRIENDS/">
+  <button class="button">Наведи на меня</button>
+</a>
+
+  <section class="section">
+    <h2>📬 Contact</h2>
+
+    <p class="small-text">
+      <a href="http://discordapp.com/users/1229062446858244257">
+        Discord: timogus2001
+      </a>
     </p>
-    <p>
-      I enjoy designing, exploring, and leveling up my skills 🚀
+
+    <p class="small-text">
+      <a href="https://github.com/Timogus2001">
+        GitHub: Timogus2001
+      </a>
     </p>
-  </div>
-</section>
 
-<section class="section">
-  <div class="cards">
-     <a href="https://timogus2001.github.io/MY-FRIENDS/">
-    <div class="card">Home</div>
-  </div>
-</section>
+    <p class="small-text">
+      Telegram: @timannenkov
+    </p>
+  </section>
 
-<section class="section">
-  <h2>📬 Contact</h2>
-
-  <p2>
-    <a href="http://discordapp.com/users/1229062446858244257">
-      Discord: timogus2001
-    </a>
-  </p2>
-  <p2>
-    <a href="https://github.com/Timogus2001">
-      GitHub: Timogus2001
-    </a>
-  </p2>
-  <p2>Telegram: @timannenkov</p2>
-</section>
+</div>
 
 </body>
 </html>
