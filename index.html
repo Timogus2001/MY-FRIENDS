@@ -1,40 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MY FRIENDS</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
   <style>
-
     body {
       margin: 0;
       background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
     }
 
- nav {
+    nav {
       background-color: #F1F3F4;
       padding: 15px;
       text-align: center;
     }
+
     nav a {
       color: #E37400;
       margin: 0 20px;
       font-size: 18px;
+      text-decoration: none;
+      font-weight: bold;
     }
+
     nav a:hover {
       color: #FBBC04;
     }
-
 
     .container {
       max-width: 1000px;
       margin: 20px auto;
       padding: 20px;
       background-color: white;
-
       border: 2px solid #e6e6e6;
       border-radius: 15px;
-
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     }
 
@@ -50,13 +55,23 @@
       text-align: center;
     }
 
+    h3 {
+      color: orange;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-spacing: 15px;
+    }
+
     td {
-      width: 600px;
-      height: 200px;
       border: 10px solid #eff2e9;
       border-radius: 25px;
       padding: 10px;
       vertical-align: top;
+      background-color: white;
     }
 
     img {
@@ -66,38 +81,62 @@
       border: 5px solid grey;
       display: block;
       margin: 0 auto;
+      object-fit: cover;
+      max-width: 100%;
     }
 
-    h3 {
-      color: orange;
-      font-size: 20px;
-      text-align: center;
-    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
 
+      h2 {
+        font-size: 18px;
+      }
+
+      table,
+      tr,
+      td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      td {
+        margin-bottom: 15px;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
   </style>
-
-  <title>MY FRIENDS</title>
 </head>
+
 <body>
 
 <div class="container">
+
   <nav>
-    <a href="https://timogus2001.github.io/MY-FRIENDS/oeifjsdithgrh.html">Me</a>
+    <a href="oeifjsdithgrh.html">Me</a>
     <a href="https://robolab.com.cy/">Anton</a>
     <a href="https://romaearnmoney-del.github.io/67/">Roma</a>
     <a href="https://ebellect.github.io/first-html-site/">Lev</a>
-    <a href="https://timogus2001.github.io/MY-FRIENDS/ANIMALS.html">What I Like</a>
+    <a href="ANIMALS.html">What I Like</a>
   </nav>
-  <h1>My friends</h1>
+
+  <h1>My Friends</h1>
   <h1>But before that, let me tell u abt me:</h1>
   <h1>MY NAME IS TIMOFEI</h1>
 
-  <table align="center">
+  <table>
     <tr>
       <td>
         <a href="oeifjsdithgrh.html">
-          <img src="https://i1.sndcdn.com/artworks-iVkNLLsezX67N9vE-eNijVg-t1080x1080.jpg">
+          <img src="https://i1.sndcdn.com/artworks-iVkNLLsezX67N9vE-eNijVg-t1080x1080.jpg" alt="Me">
         </a>
+
         <h2>
           Yo! I'm Killstreaker — a gamer, builder, and creative mind who loves Minecraft-style worlds and cool projects.
         </h2>
@@ -109,13 +148,15 @@
 
   <h1>NOW, I will tell facts about my friends</h1>
 
-  <table align="center">
+  <table>
     <tr>
+
       <td>
         <a href="https://ebellect.github.io/first-html-site/">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT73uDPf-IywnJ8aedZgEf3pEi7tHklwA4Kaw&s">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT73uDPf-IywnJ8aedZgEf3pEi7tHklwA4Kaw&s" alt="Lev">
         </a>
-        Lev, aka Lev<br>
+
+        <strong>Lev, aka Lev</strong><br><br>
         1) He is my friend since 2024<br>
         2) Bro likes scripting<br>
         3) Bro knows what it is to be a Rivals pro
@@ -123,9 +164,10 @@
 
       <td>
         <a href="https://romaearnmoney-del.github.io/67/">
-          <img src="https://media.asroma.com/prod/images/square_medium_fill/4627e84fc85e-dybala.png">
+          <img src="https://media.asroma.com/prod/images/square_medium_fill/4627e84fc85e-dybala.png" alt="Roma">
         </a>
-        Roma, aka Rom4ik_S3gma<br>
+
+        <strong>Roma, aka Rom4ik_S3gma</strong><br><br>
         1) This guy accidentally hacked everyone's WhatsApp accounts<br>
         2) This guy plays GTA 5 ☠️ (He's 12)<br>
         3) This guy loves 67
@@ -133,13 +175,15 @@
 
       <td>
         <a href="https://robolab.com.cy/">
-          <img src="https://uchitel.ru/uploads/2021/10/Hozyashev-Anton-scaled_600x600_acf_cropped-400x400.jpg">
+          <img src="https://uchitel.ru/uploads/2021/10/Hozyashev-Anton-scaled_600x600_acf_cropped-400x400.jpg" alt="Anton">
         </a>
-        Anton Khozasdas, aka Anton<br>
+
+        <strong>Anton Khozasdas, aka Anton</strong><br><br>
         1) Legendary teacher<br>
         2) Founder of "Antagonist. Cinema"<br>
         3) Teacher at Robolab
       </td>
+
     </tr>
   </table>
 
